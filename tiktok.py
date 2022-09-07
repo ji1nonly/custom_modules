@@ -16,9 +16,9 @@ async def tiktok(client: Client, message: Message):
 
     try:
         await message.edit("<b>Downloading...</b>")
-        await client.unblock_user("@thisvidbot")
+        await client.unblock_user("@SaveAsBot")
         msg = await interact_with(
-            await client.send_message("@thisvidbot", link)
+            await client.send_message("@SaveAsBot", link)
         )
         await client.send_video(
             message.chat.id, msg.video.file_id, caption=f"<b>Link: {link}</b>"
@@ -27,10 +27,10 @@ async def tiktok(client: Client, message: Message):
         await message.edit(format_exc(e))
     else:
         await message.delete()
-        await client.delete_messages("@thisvidbot", interact_with_to_delete)
+        await client.delete_messages("@SaveAsBot", interact_with_to_delete)
         interact_with_to_delete.clear()
 
 
 modules_help["tiktok"] = {
-    "tt [link|reply]*": "download video from tiktok (can also facebook, instagram, twitter, youtube",
+    "tt [link|reply]*": "download video from tiktok (can also instagram and pinterest)",
 }
