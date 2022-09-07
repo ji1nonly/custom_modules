@@ -21,7 +21,7 @@ async def tiktok(client: Client, message: Message):
             await client.send_message("@SaveAsBot", link)
         )
         await client.send_video(
-            message.chat.id, msg.video.file_id, caption=f"<b>Link: {link}</b>"
+            message.chat.id, msg.video, caption=f"<b>Link: {link}</b>"
         )
     except Exception as e:
         await message.edit(format_exc(e))
