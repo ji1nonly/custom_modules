@@ -18,7 +18,7 @@ from utils.misc import modules_help, prefix
 async def amogus(client: Client, message: Message):
     text = " ".join(message.command[1:])
 
-    await message.edit("<b>amgus, tun tun tun tun tun tun tun tudududn tun tun...</b>")
+    await message.edit("<b>amogus, tun tun tun tun tun tun tun tudududn tun tun...</b>")
 
     clr = randint(1, 12)
 
@@ -52,5 +52,5 @@ async def amogus(client: Client, message: Message):
 
 
 modules_help["amogus"] = {
-    "amogus [text]": "amgus, tun tun tun tun tun tun tun tudududn tun tun"
+    "amogus [text]": "amogus, tun tun tun tun tun tun tun tudududn tun tun"
 }
