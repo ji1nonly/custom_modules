@@ -19,7 +19,7 @@ async def calc(_, message: Message):
                 date = date.replace(dates[0][i], dates[1][i])
             await message.edit_text(f'```{date}```', parse_mode='markdown')
         else:
-            await message.edit_text(f'Введите год цифрами')
+            await message.edit_text(f'Masukkan tahun dalam angka')
     else:
         date = calendar.month(datetime.datetime.now().year, datetime.datetime.now().month)
         for i in range(len(dates[0])):
