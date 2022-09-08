@@ -7,7 +7,7 @@ from pyrogram.types import Message
 from utils.misc import prefix, modules_help
 
 dates = [['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-         ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс', 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Недрочабрь', 'Декабрь']]
+         ['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']]
 
 
 @Client.on_message(filters.command("clndr", prefix) & filters.me)
