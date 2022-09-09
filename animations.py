@@ -69,13 +69,13 @@ async def cell(client: Client, message: Message):
         "<b>Connecting To Telegram Headquarters...</b>",
         "<b>Call Connected.</b>",
         "<b>Telegram: Hello This is Telegram HQ. Who is this?</b>",
-        f"<b>Me: Yo this is Dragon ,Please Connect me to my lil bro,Pavel Durov </b>",
+        f"<b>Me: Yo this is Handsome boy ,Please Connect me to my lil bro,Pavel Durov </b>",
         "<b>User Authorised.</b>",
         "<b>Calling Shivamani </b>  <code>At +916969696969</code>",
         "<b>Private  Call Connected...</b>",
         "<b>Me: Hello Sir, Please Ban This Telegram Account.</b>",
         "<b>Shivamani : May I Know Who Is This?</b>",
-        f"<b>Me: Yo Brah, I Am Dragon</b>",
+        f"<b>Me: Yo Brah, I Am Handsome boy</b>",
         "<b>Shivamani : OMG!!! Long time no see, Wassup cat...\nI'll Make Sure That Guy Account Will Get Blocked Within 24Hrs.</b>",
         "<b>Me: Thanks, See You Later Brah.</b>",
         "<b>Shivamani : Please Don't Thank Brah, Telegram Is Our's. Just Gimme A Call When You Become Free.</b>",
@@ -411,6 +411,41 @@ async def tmoon(client: Client, message: Message):
         await message.edit_text(animation_chars[i % 32])
 
 
+@Client.on_message(filters.command(["koc", "kocok"], prefix) & filters.me)
+async def kocok(client: Client, message: Message):
+    e = await edit_or_reply(message, "8✊===D")
+    await e.edit("8=✊==D")
+    await e.edit("8==✊=D")
+    await e.edit("8===✊D")
+    await e.edit("8==✊=D")
+    await e.edit("8=✊==D")
+    await e.edit("8✊===D")
+    await e.edit("8=✊==D")
+    await e.edit("8==✊=D")
+    await e.edit("8===✊D")
+    await e.edit("8==✊=D")
+    await e.edit("8=✊==D")
+    await e.edit("8✊===D")
+    await e.edit("8=✊==D")
+    await e.edit("8==✊=D")
+    await e.edit("8===✊D")
+    await e.edit("8==✊=D")
+    await e.edit("8=✊==D")
+    await e.edit("8✊===D")
+    await e.edit("8===✊D💦")
+    await e.edit("8==✊=D💦💦")
+    await e.edit("8=✊==D💦💦💦")
+    await e.edit("8✊===D💦💦💦💦")
+    await e.edit("8===✊D💦💦💦💦💦")
+    await e.edit("8==✊=D💦💦💦💦💦💦")
+    await e.edit("8=✊==D💦💦💦💦💦💦💦")
+    await e.edit("8✊===D💦💦💦💦💦💦💦💦")
+    await e.edit("8===✊D💦💦💦💦💦💦💦💦💦")
+    await e.edit("8==✊=D💦💦💦💦💦💦💦💦💦💦")
+    await e.edit("8=✊==D ahhh fuck yeahh?")
+    await e.edit("🥵🥵🥵🥵")
+
+
 modules_help["animations"] = {
     "stupid": " stupid animation",
     "gangster": "YO! Gangster animation",
@@ -429,4 +464,5 @@ modules_help["animations"] = {
     "earth": "Fun animation try yourself to know more",
     "smoon": "Fun animation try yourself to know more",
     "tmoon": "Fun animation try yourself to know more",
+    "kocok": "Fun animation try yourself to know more",
 }
