@@ -33,8 +33,9 @@ async def reactspam(client: Client, message: Message):
 for i in range(amount):
         try:
             client.send_reaction(message.chat.id, message.message_id-i, "reaction")
-        except:
-           pass
+            except Exception as e:
+                return await message.edit(format_exc(e))
+        else:
             return await message.edit(f"<b>You can't use that emoji...</b>")
     await message.edit(f"<b>Done!</b>")
 
