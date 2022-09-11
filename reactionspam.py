@@ -30,7 +30,7 @@ async def reactspam(client: Client, message: Message):
     amount = int(message.command[1])
     reaction = " ".join(message.command[2:])
     await message.edit(f"<b>One moment...</b>")
-    for i in range(30):
+    for i in range(amount):
      try:
        client.send_reaction(message.chat.id, message.message_id-i, "reaction")
     except:
